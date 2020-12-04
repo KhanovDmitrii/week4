@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 
 const NAME = "khanovds";
+const port = process.env.PORT || 80;
 
 app.get('/', function(req, res) {
     res.send(NAME);
@@ -22,8 +23,8 @@ app.post('/result4/', function(req, res) {
 
 });
 
-app.listen(80, () => {
-    console.log(`Example app listening at http://localhost:${80}`)
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`)
 })
 
 function get_post(req) {
