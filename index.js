@@ -22,8 +22,8 @@ app.post('/result4/', function(req, res) {
 
 });
 
-app.listen(3000, () => {
-    console.log(`Example app listening at http://localhost:${3000}`)
+app.listen(80, () => {
+    console.log(`Example app listening at http://localhost:${80}`)
 })
 
 function get_post(req) {
